@@ -1,0 +1,47 @@
+levantar sofa
+andar até banheiro
+	Se portaFechada então
+		abrirPorta()
+	fim se
+entrar no banheiro
+andar até a pia
+	Se encontrar pasta de dente na pia e escova de dente
+		EscovarDentes()
+	Se não encontrar
+		procurar na gaveta embaixo da pia
+		EscovarDentes()
+Percorrer o caminho de volta para a sala
+Sentar no sofa
+
+
+escovarDentes() //função escovarDentes
+	Pegue a pasta de dente e a escova de dente.
+		Se pasta de dente fechada então
+			abrir pasta de dente
+		FimSe
+	Colocar o creme dental sobre a escova de dente.
+	Abrir a torneira
+	Molhar a escova de dente
+	Fechar a torneira
+	Colocar a escova na boca
+		Enquanto o tempo for igual 180 segs faça
+		movimentos circulares nos dentes
+	Tirar a escova da boca
+	Abrir torneira
+	Esticar as mãos até a pia
+	Colocar água sobre as mãos
+	Levar a água das mãos até boca
+	Não engolir
+	Fechar a torneira
+		Enquanto o tempo for igual 30 segs faça
+		bocheco com a boca.
+	Cuspir a água na pia.
+	Fechar a pasta.
+	Colocar a pasta e a escova de dente na gaveta.
+fim escovarDentes
+
+abrirPorta() //função abrirPortas
+	esticar o braço até o trinco da porta
+	girar o trinco em sentido anti-horario
+	encostar a porta na parede
+fim abrirPorta
