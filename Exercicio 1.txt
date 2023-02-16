@@ -25,9 +25,11 @@ escovarDentes() //função escovarDentes
 	Molhar a escova de dente
 	Fechar a torneira
 	Colocar a escova na boca
-	Enquanto o tempo < 180 segs faça
-		movimentos circulares nos dentes
-	Fim enquanto
+	tempo = 0 segundos
+	Enquanto (tempo < 180 segundos) faça
+    	movimentos circulares nos dentes
+    	tempo = tempo + 1 segundo
+	fimenquanto
 	Tirar a escova da boca
 	Abrir torneira
 	Esticar as mãos até a pia
@@ -35,9 +37,11 @@ escovarDentes() //função escovarDentes
 	Levar a água das mãos até boca
 	Não engolir a água
 	Fechar a torneira
-	Enquanto o tempo < 30 segs faça
+	tempo = 0 segundos
+	Enquanto (tempo < 30 segs) faça
 		bocheco com a boca.
-	Fim enquanto
+	tempo = tempo + 1 segundo
+	fimenquanto
 	Cuspir a água na pia.
 	Fechar a pasta.
 	Colocar a pasta e a escova de dente na gaveta.
