@@ -20,19 +20,18 @@ Início
 inteiro num
 escreva("Digite um número inteiro positivo:")
 leia(num)
-	se (num >= 0) entao
-		escreva("Equilave ao número", + " " + fibonacci(num), "" + " na sequência de fibonnaci.")
-	senao
-		enquanto (num < 0) faça
-			escreva("O número informado não pode ser negativo. Digite um número inteiro:")
-			leia(num)
-			se (num >= 0) entao
-				escreva("Equilave ao número", + " " + fibonacci(num), + "" + " na sequência de fibonnaci.")
-			fimse
-		fimenquanto
-	fimse
+se (num >= 0) entao
+	escreva("Equilave ao número", + " " + fibonacci(num), "" + " na sequência de fibonnaci.")
+senao
+	enquanto (num < 0) faça
+		escreva("O número informado não pode ser negativo. Digite um número inteiro:")
+		leia(num)
+		se (num >= 0) entao
+			escreva("Equilave ao número", + " " + fibonacci(num), + "" + " na sequência de fibonnaci.")
+		fimse
+	fimenquanto
+fimse
 		
-
 funcao inteiro fibonacci(inteiro num)
 	se(num == 0) entao
 		retorne 0
