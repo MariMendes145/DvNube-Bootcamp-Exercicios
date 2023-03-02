@@ -14,33 +14,29 @@ correspondente a essa posição. Certifique-se de incluir tratamento de erro par
 que o usuário insira um número negativo como entrada.*/
 
 
-Início
+INÍCIOPROGRAMA
 
-//variável
 inteiro num
 escreva("Digite um número inteiro positivo:")
 leia(num)
-se (num >= 0) entao
-	escreva("Equilave ao número", + " " + fibonacci(num), "" + " na sequência de fibonnaci.")
-senao
-	enquanto (num < 0) faça
-		escreva("O número informado não pode ser negativo. Digite um número inteiro:")
-		leia(num)
-		se (num >= 0) entao
-			escreva("Equilave ao número", + " " + fibonacci(num), + "" + " na sequência de fibonnaci.")
-		fimse
-	fimenquanto
-fimse
+inteiro fibo = fibonacci(num)
+enquanto (fibo < 0) faça
+	escreva("Digite um número maior ou igual a 0:")
+	leia(num)
+	fibo = fibonacci(num)
+fimenquanto
+escreva("A sequência Fibonacci de " + num + " equivale a " + fibonacci(num)); 
+FIMPROGRAMA
 		
 funcao inteiro fibonacci(inteiro num)
-	se(num == 0) entao
-		retorne 0
-	senao
-		se (num == 1) entao
-			retorne 1
-		senao
-			retorne fibonacci(num-1) + fibonacci(num-2)
-		fimse
+	se(num < 0) entao
+		retorna -1
+	senao se (num == 0) entao
+		retorna 0
+	senao se (num == 1) entao
+		retorna 1
+	senao 
+		retorna fibonacci(num-1) + fibonacci(num-2)
 	fimse
-fimfibonacci
-fimalgoritmo
+fimfuncao
+
