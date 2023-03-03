@@ -12,38 +12,29 @@ marimendes@bootcamp.dvnube
 _________________________________________________
 
 public class SequenciaFibonacci {
+    integer num;
     
-    public Integer fibonacci(Integer num) {
-        
-      if (num == 0) {
-          return 0;
-      } else {
-         if (num == 1) {
-            return 1;
-         } else {
-            return fibonacci(num - 1) + fibonacci(num - 2);
-                }
-            }
+    public static Integer fibonacci(Integer num){
+        if(num < 0){
+            System.debug('O número deve ser negativo!');
+            return null;
         }
-    
-    
-    public void inicio(){
-        
-        Integer num = 8;
-        
-        if ( num >= 0 ){
-             System.debug('A sequência Fibonacci de ' + num + ' equivale a ' + fibonacci(num));    
-        }else{
-             System.debug('O número não pode ser negativo');   
+        else if(num == 0){
+            return 0;
+        }
+        else if(num == 1){
+            return 1;
+        }
+        else {
+            return fibonacci(num-1) + fibonacci(num-2);
+        }
     }
-  }      
 }
               
         
 __________________________________________________________
 //Apex Code:
-SequenciaFibonacci i = new SequenciaFibonacci();
-i.inicio();
+System.debug(SequenciaFibonacci.fibonacci(10));
 _________________________________________________________
 
 
