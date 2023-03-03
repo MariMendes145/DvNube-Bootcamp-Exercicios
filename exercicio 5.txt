@@ -30,7 +30,7 @@ FIMPROGRAMA
 		
 funcao inteiro fibonacci(inteiro num)
 	se(num < 0) entao
-		retorna -1
+		retorna ('O número não pode ser negativo!')
 	senao se (num == 0) entao
 		retorna 0
 	senao se (num == 1) entao
